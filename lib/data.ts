@@ -69,7 +69,7 @@ const data = {
     socialLinks: [
       {
         icon: Globe,
-        url: "https://theusama.com",
+        url: "https://usama.ai",
         label: "Website"
       },
       {
@@ -80,7 +80,7 @@ const data = {
       },
       {
         icon: Linkedin,
-        url: "https://linkedin.com/in/the-usama",
+        url: "https://linkedin.com/in/usama-ai",
         label: "LinkedIn",
         target: "_blank"
       },
