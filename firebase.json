@@ -3,12 +3,12 @@
     "public": "out",
     "redirects": [
       {
-        "source": "/!(og-image.png|)",
+        "source": "/!(*.*|)",
         "destination": "/",
         "type": 302
       },
       {
-        "source": "/!(og-image.png|)/**",
+        "source": "/!(*.*|)/**",
         "destination": "/",
         "type": 302
       }
