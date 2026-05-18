@@ -1,0 +1,206 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Usama Iftikhar — Machine Learning Engineer</title>
+<meta name="description" content="I build intelligent AI systems — conversational agents with voice and multimodal capabilities, computer vision pipelines, and production-ready LLM integrations." />
+<link rel="canonical" href="https://usama.ai" />
+<meta property="og:title" content="Usama Iftikhar — Machine Learning Engineer" />
+<meta property="og:description" content="I build intelligent AI systems — conversational agents with voice and multimodal capabilities, computer vision pipelines, and production-ready LLM integrations." />
+<meta property="og:url" content="https://usama.ai" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://usama.ai/og-image.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@pseudo_usama" />
+<meta name="twitter:title" content="Usama Iftikhar — Machine Learning Engineer" />
+<meta name="twitter:description" content="I build intelligent AI systems — conversational agents with voice and multimodal capabilities, computer vision pipelines, and production-ready LLM integrations." />
+<meta name="twitter:image" content="https://usama.ai/og-image.png" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"Person","name":"Usama Iftikhar","jobTitle":"Machine Learning Engineer","url":"https://usama.ai","email":"mailto:hello@usama.ai","sameAs":["https://github.com/pseudo-usama","https://linkedin.com/in/usama-ai","https://x.com/pseudo_usama"]}
+</script>
+<style>
+  :root {
+    --background: oklch(1 0 0);
+    --foreground: oklch(0.16 0 0);
+    --muted: oklch(0.55 0 0);
+    --primary: oklch(0.52 0.21 263);
+    --border: oklch(0.92 0 0);
+    --code-bg: oklch(0.97 0 0);
+  }
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; }
+  body {
+    margin: 0;
+    font-family: "Inter", ui-sans-serif, system-ui, sans-serif;
+    font-feature-settings: "ss01", "cv11";
+    background: var(--background);
+    color: var(--foreground);
+    line-height: 1.5;
+  }
+  ::selection { background: oklch(0.52 0.21 263 / 0.18); }
+  a { color: var(--primary); text-decoration: underline; text-decoration-color: oklch(0.52 0.21 263 / 0.3); text-underline-offset: 3px; transition: text-decoration-color .15s; }
+  a:hover { text-decoration-color: var(--primary); }
+  .wrap { max-width: 680px; margin: 0 auto; padding: 64px 24px; }
+  @media (min-width: 640px) { .wrap { padding: 96px 24px; } }
+  @media (min-width: 1024px) { .wrap { margin-left: max(24px, calc(50% - 450px)); margin-right: auto; } }
+  main > section + section { margin-top: 80px; }
+  h1 { font-size: 2.75rem; line-height: 1.05; font-weight: 500; letter-spacing: -0.02em; margin: 0; }
+  @media (min-width: 640px) { h1 { font-size: 3rem; } }
+  h2 { font-size: 1.5rem; font-weight: 500; letter-spacing: -0.01em; margin: 12px 0 0; }
+  h3 { font-size: 16px; font-weight: 500; margin: 0; }
+  p { margin: 0; }
+  .intro-body { margin-top: 32px; font-size: 17px; line-height: 1.7; color: oklch(0.16 0 0 / 0.9); }
+  .intro-body p + p { margin-top: 20px; }
+  .label { font-size: 12px; text-transform: uppercase; letter-spacing: 0.14em; color: var(--muted); }
+  .lede { margin-top: 8px; color: var(--muted); }
+  .body { margin-top: 20px; font-size: 16px; line-height: 1.7; color: oklch(0.16 0 0 / 0.9); }
+  pre { margin: 20px 0 0; padding: 12px 16px; background: var(--code-bg); border-radius: 6px; overflow-x: auto; font-family: "JetBrains Mono", ui-monospace, monospace; font-size: 13.5px; line-height: 1.6; }
+  .links { margin-top: 20px; display: flex; flex-wrap: wrap; gap: 8px 20px; font-size: 14px; }
+  .projects { list-style: none; padding: 0; margin: 20px 0 0; }
+  .projects li { padding: 20px 0; border-top: 1px solid var(--border); }
+  .projects li:first-child { border-top: 0; padding-top: 20px; }
+  .project-head { display: flex; align-items: baseline; justify-content: space-between; gap: 16px; }
+  .tags { font-size: 12px; color: var(--muted); flex-shrink: 0; }
+  .project-desc { margin-top: 6px; font-size: 15px; line-height: 1.65; color: var(--muted); }
+  .timeline { list-style: none; margin: 32px 0 0; padding: 0 0 0 24px; position: relative; border-left: 1px solid var(--border); }
+  .timeline li { position: relative; }
+  .timeline li + li { margin-top: 32px; }
+  .timeline li::before { content: ""; position: absolute; left: -29px; top: 6px; width: 10px; height: 10px; border-radius: 50%; background: var(--primary); box-shadow: 0 0 0 4px var(--background); }
+  .period { font-size: 12px; text-transform: uppercase; letter-spacing: 0.12em; color: var(--muted); font-variant-numeric: tabular-nums; }
+  .role { margin-top: 4px; font-size: 16px; font-weight: 500; }
+  .role .co { color: var(--muted); font-weight: 400; }
+  .detail { margin-top: 6px; font-size: 15px; line-height: 1.65; color: var(--muted); }
+  .grid { margin-top: 40px; display: grid; gap: 24px; font-size: 15px; }
+  @media (min-width: 640px) { .grid { grid-template-columns: 1fr 1fr; } }
+  .grid p { margin-top: 8px; line-height: 1.65; color: oklch(0.16 0 0 / 0.9); }
+  .contact { list-style: none; padding: 0; margin: 20px 0 0; font-size: 16px; }
+  .contact li + li { margin-top: 8px; }
+
+  /* Scroll-triggered slide up */
+  .reveal { opacity: 0; transform: translateY(24px); transition: opacity .7s ease-out, transform .7s ease-out; will-change: opacity, transform; }
+  .reveal.in { opacity: 1; transform: none; }
+  @media (prefers-reduced-motion: reduce) {
+    .reveal { opacity: 1; transform: none; transition: none; }
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+<main>
+
+  <section class="reveal">
+    <h1>Usama Iftikhar — machine learning engineer.</h1>
+    <div class="intro-body">
+      <p>I build intelligent AI systems — conversational agents with voice and multimodal capabilities, computer vision pipelines, and production-ready LLM integrations. I work across the full lifecycle, from prototyping ideas to deploying scalable systems in the cloud.</p>
+      <p>I also believe in giving back to the community, which is why I build open source tools that make AI more accessible. <a href="mailto:hello@usama.ai">Get in touch</a>, or find me on <a href="https://github.com/pseudo-usama" target="_blank" rel="noreferrer">GitHub</a>, <a href="https://linkedin.com/in/usama-ai" target="_blank" rel="noreferrer">LinkedIn</a>, and <a href="https://x.com/pseudo_usama" target="_blank" rel="noreferrer">X</a>.</p>
+    </div>
+  </section>
+
+  <section id="hermex" class="reveal">
+    <div class="label">Open source</div>
+    <h2>Hermex</h2>
+    <p class="lede">Drive ChatGPT and Gemini from Python — no API keys, no billing, just the free web UI.</p>
+    <div class="body">
+      <p>Open-source Python library that lets you script the free ChatGPT and Gemini web interfaces directly — so you can prototype, batch, and automate without paying for API access. Useful for research, one-off automations, and anyone hitting paywalls before they've validated an idea. MIT licensed.</p>
+    </div>
+<pre><code>from hermex import ChatGPT
+
+chat = ChatGPT()
+print(chat.query("Explain attention in one paragraph."))</code></pre>
+    <div class="links">
+      <a href="https://github.com/pseudo-usama/hermex" target="_blank" rel="noreferrer">GitHub →</a>
+      <a href="https://hermex.usama.ai" target="_blank" rel="noreferrer">Docs →</a>
+      <a href="https://pypi.org/project/hermex/" target="_blank" rel="noreferrer">PyPI →</a>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <div class="label">Selected projects</div>
+    <ul class="projects">
+      <li>
+        <div class="project-head">
+          <h3>Multi-Agent Voice Bot</h3>
+          <span class="tags">Voice AI · LiveKit · LLM</span>
+        </div>
+        <p class="project-desc">Multi-agent customer service voice system built with LiveKit — callers are routed to specialized AI agents based on query type, mimicking real call center escalation flows.</p>
+      </li>
+      <li>
+        <div class="project-head">
+          <h3>Multimodal AI Chatbot</h3>
+          <span class="tags">Multimodal · RAG · LLM</span>
+        </div>
+        <p class="project-desc">Conversational AI that responds with text, images, and videos, extracting real-time data from live sources to help users retrieve information for informed decision-making.</p>
+      </li>
+    </ul>
+  </section>
+
+  <section id="about" class="reveal">
+    <div class="label">Experience</div>
+    <p class="body" style="margin-top:12px">A career that started in full-stack web development and evolved through computer vision into the LLM and voice AI space of today.</p>
+
+    <ol class="timeline">
+      <li>
+        <div class="period">Nov 2023 — Present</div>
+        <div class="role">Sr. Machine Learning Engineer <span class="co">— AI Dev Lab</span></div>
+        <p class="detail">Working at the intersection of LLMs, voice AI, and multimodal systems — building production-ready agents and cloud-deployed AI pipelines.</p>
+      </li>
+      <li>
+        <div class="period">Jul 2022 — Oct 2023</div>
+        <div class="role">Machine Learning Engineer <span class="co">— Vacon.ai</span></div>
+        <p class="detail">Moved into computer vision and generative AI — working with Stable Diffusion, YOLO, Grounding DINO and CLIP before LLMs became the industry's main focus.</p>
+      </li>
+      <li>
+        <div class="period">Jun 2021 — Jun 2022</div>
+        <div class="role">Full Stack Developer <span class="co">— Cipher Coders</span></div>
+        <p class="detail">Built scalable web applications across the full stack — React.js, Node.js, Next.js and Python. This is where I learned to ship real products.</p>
+      </li>
+    </ol>
+
+    <div class="grid">
+      <div>
+        <div class="label">Skills</div>
+        <p>Python, LLMs, RAG, LangChain, LlamaIndex, FastAPI, AWS, Computer Vision, NLP</p>
+      </div>
+      <div>
+        <div class="label">Education</div>
+        <p>Master's in Data Science, PUCIT — 4.0 GPA</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="reveal">
+    <div class="label">Contact</div>
+    <ul class="contact">
+      <li>Email — <a href="mailto:hello@usama.ai">hello@usama.ai</a></li>
+      <li>GitHub — <a href="https://github.com/pseudo-usama" target="_blank" rel="noreferrer">github.com/pseudo-usama</a></li>
+      <li>LinkedIn — <a href="https://linkedin.com/in/usama-ai" target="_blank" rel="noreferrer">linkedin.com/in/usama-ai</a></li>
+      <li>X — <a href="https://x.com/pseudo_usama" target="_blank" rel="noreferrer">@pseudo_usama</a></li>
+    </ul>
+  </section>
+
+</main>
+</div>
+<script>
+  (function () {
+    var els = document.querySelectorAll('.reveal');
+    if (!('IntersectionObserver' in window)) {
+      els.forEach(function (el) { el.classList.add('in'); });
+      return;
+    }
+    var io = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+    els.forEach(function (el) { io.observe(el); });
+  })();
+</script>
+</body>
+</html>
