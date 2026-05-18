@@ -1,40 +1,17 @@
 {
-    "hosting": {
-      "public": "out",
-      "ignore": [
-        "firebase.json",
-        "**/.*",
-        "**/node_modules/**"
-      ],
-      "rewrites": [
-        // {
-        //   "source": "/usama-resume.pdf",
-        //   "destination": "/usama-cv.pdf"
-        // },
-        // {
-        //   "source": "/usama-cv.pdf",
-        //   "destination": "/usama-cv.pdf"
-        // },
-        // {
-        //   "source": "/cv.pdf",
-        //   "destination": "/usama-cv.pdf"
-        // },
-        // {
-        //   "source": "/resume.pdf",
-        //   "destination": "/usama-cv.pdf"
-        // },
-        // {
-        //   "source": "/cv",
-        //   "destination": "/usama-cv.pdf"
-        // },
-        // {
-        //   "source": "/resume",
-        //   "destination": "/usama-cv.pdf"
-        // },
-        // {
-        //   "source": "**",
-        //   "destination": "/index.html"
-        // }
-      ]
-    }
+  "hosting": {
+    "public": "out",
+    "redirects": [
+      {
+        "source": "/!(og-image.png|)",
+        "destination": "/",
+        "type": 302
+      },
+      {
+        "source": "/!(og-image.png|)/**",
+        "destination": "/",
+        "type": 302
+      }
+    ]
   }
+}
