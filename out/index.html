@@ -112,10 +112,10 @@
     <div class="body">
       <p>Open-source Python library that lets you script the free ChatGPT and Gemini web interfaces directly — so you can prototype, batch, and automate without paying for API access. Useful for research, one-off automations, and anyone hitting paywalls before they've validated an idea. MIT licensed.</p>
     </div>
-<pre><code>from hermex import ChatGPT
+<pre><code>from hermex import Gemini
 
-chat = ChatGPT()
-print(chat.query("Explain attention in one paragraph."))</code></pre>
+response = Gemini.simple_query("Explain attention in one paragraph")
+print(response.text)</code></pre>
     <div class="links">
       <a href="https://github.com/pseudo-usama/hermex" target="_blank" rel="noreferrer">GitHub →</a>
       <a href="https://hermex.usama.ai" target="_blank" rel="noreferrer">Docs →</a>

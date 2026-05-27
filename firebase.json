@@ -3,6 +3,11 @@
     "public": "out",
     "redirects": [
       {
+        "source": "/hermex",
+        "destination": "https://github.com/pseudo-usama/hermex",
+        "type": 302
+      },
+      {
         "source": "/!(*.*|)",
         "destination": "/",
         "type": 302
